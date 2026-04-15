@@ -12,7 +12,7 @@ export default function PastEvents() {
           {/* Card 1 */}
           <div className={styles.eventCard}>
             <div className={styles.cardImage}>
-              <img src="src/assets/Event_ScoobyDoo.svg" alt="Event One Poster" />
+              <img src="src/assets/Event_ScoobyDoo.svg" alt="ScoobyDoo Event Poster" />
             </div>
             <div className={styles.cardText}>
               <h3 className={styles.eventName}>ASCE-Bear, Where Are You?</h3>
@@ -26,7 +26,7 @@ export default function PastEvents() {
           {/* Card 2 */}
           <div className={styles.eventCard}>
             <div className={styles.cardImage}>
-              <img src="src/assets/Event_Minions.svg" alt="Event Two Poster" />
+              <img src="src/assets/Event_Minions.svg" alt="Minions Event Poster" />
             </div>
             <div className={styles.cardText}>
               <h3 className={styles.eventName}>The Rise of ASCE Bear</h3>
@@ -40,7 +40,7 @@ export default function PastEvents() {
           {/* Card 3 */}
           <div className={styles.eventCard}>
             <div className={styles.cardImage}>
-              <img src="src/assets/Event_MyLittlePony.svg" alt="Event Three Poster" />
+              <img src="src/assets/Event_MyLittlePony.svg" alt="MyLittlePony Event Poster" />
             </div>
             <div className={styles.cardText}>
               <h3 className={styles.eventName}>My Little ASCE Bear</h3>
