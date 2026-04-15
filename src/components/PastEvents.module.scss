@@ -1,0 +1,109 @@
+// Breakpoints
+$breakpoint-mobile: 390px;
+$breakpoint-tablet: 744px;
+$breakpoint-desktop: 1280px;
+
+.pastEvents {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+
+  // Desktop (Default)
+  padding: 0 4.75rem;
+
+  // Tablet (down to 744px)
+  @media (max-width: calc(#{$breakpoint-desktop} - 1px)) {
+    padding: 40px;
+  }
+
+
+
+  h1 {
+    //font-family: athiti;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128.4%;
+  }
+
+  .eventsContainer {
+    padding: 3.125rem;
+    margin-top: 5rem;
+    border: 2px solid #979797;
+    border-radius: 20px;
+
+    // Tablet (down to 744px)
+    @media (max-width: calc(#{$breakpoint-desktop} - 1px)) {
+      width: 1199px; 
+    }
+    
+    .cardsWrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4.25rem;
+      align-items: stretch;
+
+      // Tablet (down to 744px)
+      @media (max-width: calc(#{$breakpoint-desktop} - 1px)) {
+        gap: 3rem;
+      }
+    }
+
+    .eventCard {
+      border: 2px solid #D9D9D9;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-color);
+
+      .cardImage {
+        width: 100%;
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+
+      .cardText {
+        height: 250px;
+        padding: 33px;
+        color: #000000;
+        text-align: center;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: auto;
+        // font-family: Poppins;
+
+        .eventName {
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 128.4%;
+          margin-bottom: 0.25rem;
+        }
+
+        .eventDate {
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 128.4%;
+          margin-bottom: 0.25rem;
+        }
+
+        .eventDesc {
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160.6%;
+          letter-spacing: -0.14px;
+        }
+      }
+    }
+  }
+}
