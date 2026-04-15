@@ -1,0 +1,28 @@
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.5rem 4.25rem;
+  padding: 5rem 4.75rem 7.5rem 4.75rem;
+
+  .gridItem {
+    box-sizing: border-box;
+    color: var(--text-color);
+
+    h2 {
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 128.4%;
+      margin-bottom: 1.25rem;
+    }
+    p {
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160.6%;
+      letter-spacing: -0.01125rem;
+    }
+  }
+
+
+}
