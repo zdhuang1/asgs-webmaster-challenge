@@ -1,7 +1,7 @@
 // Poppins Font Family
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/poppins-light.woff2') format('woff2');
+  src: url('/fonts/poppins-v24-latin-light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/poppins-regular.woff2') format('woff2');
+  src: url('/fonts/poppins-v24-latin-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/poppins-bold.woff2') format('woff2');
+  src: url('/fonts/poppins-v24-latin-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -27,7 +27,7 @@
 // Athiti Font Family
 @font-face {
   font-family: 'Athiti';
-  src: url('/fonts/athiti-regular.woff2') format('woff2');
+  src: url('/fonts/athiti-v14-latin-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -35,9 +35,10 @@
 
 @font-face {
   font-family: 'Athiti';
-  src: url('/fonts/athiti-bold.woff2') format('woff2');
+  src: url('/fonts/athiti-v14-latin-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 * {

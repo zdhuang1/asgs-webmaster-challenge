@@ -17,6 +17,7 @@ $breakpoint-desktop: 1280px;
     color: var(--text-color);
 
     h2 {
+      font-family: var(--font-secondary); 
       font-size: 1.5rem;
       font-style: normal;
       font-weight: 600;
@@ -24,6 +25,7 @@ $breakpoint-desktop: 1280px;
       margin-bottom: 1.25rem;
     }
     p {
+      font-family: var(--font-primary);
       font-size: 1.125rem;
       font-style: normal;
       font-weight: 400;

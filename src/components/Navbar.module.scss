@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 3rem;  
   
   .logo {
     display: flex;
@@ -26,8 +26,9 @@
   .navLink {
     color: #ffffff;
     text-decoration: transparent;
+    font-family: var(--font-primary);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: -0.01rem;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
