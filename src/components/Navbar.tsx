@@ -1,9 +1,10 @@
 import styles from './Navbar.module.scss';
+import studioLogo from '../assets/Asgs_Logo.svg'
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar} aria-label="Main Navigation">
-      <img src="src/assets/Asgs_Logo.svg" className={styles.logo}></img>
+      <img src={studioLogo} alt="A.S Graphics Studio Logo" className={styles.logo}></img>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
           <a href="#home" className={styles.navLink} onClick={(e) => e.preventDefault()}>

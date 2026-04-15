@@ -1,5 +1,8 @@
 
 import styles from './PastEvents.module.scss';
+import EventScoobyDoo from '../assets/Event_ScoobyDoo.svg';
+import EventMinions from '../assets/Event_Minions.svg';
+import EventMLP from '../assets/Event_MyLittlePony.svg';
 
 export default function PastEvents() {
   return (
@@ -12,7 +15,7 @@ export default function PastEvents() {
           {/* Card 1 */}
           <div className={styles.eventCard}>
             <div className={styles.cardImage}>
-              <img src="src/assets/Event_ScoobyDoo.svg" alt="ScoobyDoo Event Poster" />
+              <img src={EventScoobyDoo} alt="ScoobyDoo Event Poster" />
             </div>
             <div className={styles.cardText}>
               <h3 className={styles.eventName}>ASCE-Bear, Where Are You?</h3>
@@ -26,7 +29,7 @@ export default function PastEvents() {
           {/* Card 2 */}
           <div className={styles.eventCard}>
             <div className={styles.cardImage}>
-              <img src="src/assets/Event_Minions.svg" alt="Minions Event Poster" />
+              <img src={EventMinions} alt="Minions Event Poster" />
             </div>
             <div className={styles.cardText}>
               <h3 className={styles.eventName}>The Rise of ASCE Bear</h3>
@@ -40,7 +43,7 @@ export default function PastEvents() {
           {/* Card 3 */}
           <div className={styles.eventCard}>
             <div className={styles.cardImage}>
-              <img src="src/assets/Event_MyLittlePony.svg" alt="MyLittlePony Event Poster" />
+              <img src={EventMLP} alt="MyLittlePony Event Poster" />
             </div>
             <div className={styles.cardText}>
               <h3 className={styles.eventName}>My Little ASCE Bear</h3>

@@ -6,15 +6,15 @@
 }
 
 .imageContainer {
-  display: grid; /* This is the secret to stacking without absolute positioning */
+  display: grid;
   width: 100%;
 }
 
 .image {
-  grid-area: 1 / 1; /* Places every image into the exact same grid cell */
-  width: 100%;      /* Width takes up the full screen/container */
-  height: auto;     /* Height calculates automatically based on the intrinsic aspect ratio */
-  object-fit: contain; /* Guarantees the entire image remains visible */
+  grid-area: 1 / 1;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -26,8 +26,6 @@
     pointer-events: auto;
   }
 }
-
-/* --- The rest of your styling remains exactly the same! --- */
 
 /* Nav Buttons Styling */
 .navButton {

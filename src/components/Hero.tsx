@@ -2,12 +2,15 @@ import { useState, useEffect, useCallback } from 'react';
 import styles from './Hero.module.scss';
 import PreviousIcon from '../SVGS/PreviousIcon';
 import NextIcon from '../SVGS/NextIcon';
+import HeroScoobyDoo from '../assets/Hero_ScoobyDoo.svg';
+import HeroMinions from '../assets/Hero_Minions.svg';
+import HeroMLP from '../assets/Hero_MyLittlePony.svg';
 
 // Define our images in an array so we can cleanly map over them for the images and the dots
 const carouselData = [
-  { src: "src/assets/Hero_ScoobyDoo.svg", alt: "Scooby Doo promotional banner" },
-  { src: "src/assets/Hero_Minions.svg", alt: "Minions promotional banner" },
-  { src: "src/assets/Hero_MyLittlePony.svg", alt: "My Little Pony promotional banner" }
+  { src: HeroScoobyDoo, alt: "Scooby Doo promotional banner" },
+  { src: HeroMinions, alt: "Minions promotional banner" },
+  { src: HeroMLP, alt: "My Little Pony promotional banner" }
 ];
 
 export default function Hero() {
