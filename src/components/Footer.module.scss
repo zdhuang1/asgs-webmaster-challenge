@@ -15,7 +15,7 @@
   .footerList {
     list-style: none;
     display: flex;
-    gap: 33px;
+    gap: 32px;
   }
 
   .footerItem {
@@ -31,8 +31,10 @@
     letter-spacing: -0.01rem;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
-
     transition: color 0.3s ease;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 
     &:hover {
       color: #cccccc;
@@ -41,6 +43,50 @@
 
     &:focus-visible {
       outline: 2px solid #ffffff; // High-contrast outline
+    }
+  }
+
+  .linkText {
+    display: block;
+  }
+
+  .linkIcon {
+    display: none;
+    width: 24px; /* Optional: Adjust icon size to fit your design */
+    height: 24px;
+  }
+
+  @media (max-width: 1279px) {
+    .footerText {
+      font-size: 0.85rem; 
+    }
+
+    .footerList {
+      gap: 24px; 
+    }
+    
+    .footerLink {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 743px) {
+    padding: 0 1.5rem;
+
+    .footerList {
+      gap: 8px; 
+    }
+
+    .linkText {
+      display: none; 
+    }
+
+    .linkIcon {
+      display: block; 
+    }
+
+    .linkIcon {
+      display: block; 
     }
   }
 }

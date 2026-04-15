@@ -1,6 +1,7 @@
 $breakpoint-mobile: 390px;
 $breakpoint-tablet: 744px;
 $breakpoint-desktop: 1280px;
+
 .details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,6 +16,17 @@ $breakpoint-desktop: 1280px;
   .gridItem {
     box-sizing: border-box;
     color: var(--text-color);
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .iconWrapper {
+      display: none; 
+    }
 
     h2 {
       font-family: var(--font-secondary); 
@@ -34,5 +46,50 @@ $breakpoint-desktop: 1280px;
     }
   }
 
+  @media (max-width: calc(#{$breakpoint-tablet} - 1px)) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 1.5rem; 
 
+    .gridItem {
+      border: 1px solid #e0e0e0; 
+      border-radius: 6px;
+      padding: 1.25rem;
+
+      .header {
+        margin-bottom: 0;
+        cursor: pointer; 
+      }
+
+      .iconWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: #000000;
+          stroke: #000000;
+        }
+      }
+
+      p {
+        display: none; 
+        margin-top: 1rem;
+      }
+
+      &[data-open="true"] {
+        .iconWrapper {
+          transform: rotate(90deg);
+        }
+        
+        p {
+          display: block;
+        }
+      }
+    }
+  }
 }
