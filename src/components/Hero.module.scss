@@ -33,21 +33,24 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: rgba(255, 255, 255, 0.7); 
-  border: none;
+  background: transparent;
+  border: 2px solid transparent;
   border-radius: 50%;
   cursor: pointer;
   padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s ease;
+  transition: border-color 0.2s ease;
 
-  &:hover, &:focus {
-    background: rgba(255, 255, 255, 1);
-    outline: 2px solid #000; 
+  &:hover {
+    background: transparent;
+    outline: none;
   }
-
+  &:focus-visible {
+    outline: none;
+    border-color: #000;
+  }
   &.prevButton {
     left: 16px;
   }
