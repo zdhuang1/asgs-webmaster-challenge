@@ -1,3 +1,45 @@
+// Poppins Font Family
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+// Athiti Font Family
+@font-face {
+  font-family: 'Athiti';
+  src: url('/fonts/athiti-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Athiti';
+  src: url('/fonts/athiti-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +51,8 @@
   --bg-color: #F5F5F5;
   --text-color: #272729;
   --accent-blue: #00588C;
+  --font-primary: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-secondary: 'Athiti', system-ui, -apple-system, sans-serif;
 }
 
 body {
