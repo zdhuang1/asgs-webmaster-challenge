@@ -1,13 +1,91 @@
 .hero {
+  position: relative; 
+  width: 100%;
+  overflow: hidden; 
+  background-color: #f4f4f4; 
+}
+
+.imageContainer {
+  display: grid; /* This is the secret to stacking without absolute positioning */
+  width: 100%;
+}
+
+.image {
+  grid-area: 1 / 1; /* Places every image into the exact same grid cell */
+  width: 100%;      /* Width takes up the full screen/container */
+  height: auto;     /* Height calculates automatically based on the intrinsic aspect ratio */
+  object-fit: contain; /* Guarantees the entire image remains visible */
+  
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none; 
+
+  &.active {
+    opacity: 1;
+    z-index: 1; 
+    pointer-events: auto;
+  }
+}
+
+/* --- The rest of your styling remains exactly the same! --- */
+
+/* Nav Buttons Styling */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.7); 
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.2s ease;
 
-  .image {
-    width: 100vw;
-    height: auto;
-    z-index: -1;
-    object-fit: cover;
+  &:hover, &:focus {
+    background: rgba(255, 255, 255, 1);
+    outline: 2px solid #000; 
+  }
 
+  &.prevButton {
+    left: 16px;
+  }
+
+  &.nextButton {
+    right: 16px;
+  }
+}
+
+/* Indicators Styling */
+.indicators {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px; 
+  z-index: 10;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%; 
+  background-color: gray;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease;
+
+  &:hover, &:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+  }
+
+  &.activeDot {
+    background-color: black;
   }
 }
