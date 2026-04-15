@@ -13,7 +13,7 @@ $breakpoint-desktop: 1280px;
 
   // Tablet (down to 744px)
   @media (max-width: calc(#{$breakpoint-desktop} - 1px)) {
-    padding: 40px;
+    padding: 0 2.5rem;
   }
 
 
