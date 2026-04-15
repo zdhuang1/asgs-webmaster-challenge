@@ -8,9 +8,10 @@ export default function PastEvents() {
   return (
     <section className={styles.pastEvents}>
       <h1>Past Events</h1>
-      <div className={styles.eventsContainer}>
-        
-        <div className={styles.cardsWrapper}>
+      <div className={styles.scrollWrapper}>
+        <div className={styles.eventsContainer}>
+          
+          <div className={styles.cardsWrapper}>
           
           {/* Card 1 */}
           <div className={styles.eventCard}>
@@ -57,6 +58,7 @@ export default function PastEvents() {
         </div>
 
       </div>
+    </div>
     </section>
   );
 };

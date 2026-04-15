@@ -6,7 +6,6 @@ $breakpoint-desktop: 1280px;
 .pastEvents {
   width: 100%;
   box-sizing: border-box;
-  overflow-x: auto;
 
   // Desktop (Default)
   padding: 0 4.75rem;
@@ -26,6 +25,13 @@ $breakpoint-desktop: 1280px;
     line-height: 128.4%;
   }
 
+  .scrollWrapper {
+    // Tablet (down to 744px)
+    @media (max-width: calc(#{$breakpoint-desktop} - 1px)) {
+      overflow-x: auto;
+    }
+  }
+
   .eventsContainer {
     padding: 3.125rem;
     margin-top: 5rem;
@@ -34,7 +40,7 @@ $breakpoint-desktop: 1280px;
 
     // Tablet (down to 744px)
     @media (max-width: calc(#{$breakpoint-desktop} - 1px)) {
-      width: 1199px; 
+      width: 1199px;
     }
     
     .cardsWrapper {
